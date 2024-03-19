@@ -1,69 +1,39 @@
-
-<!---
-   Para comentarios usar este bloque para documentar pendientes, secuencias, etc.
---->
-
-
-![](https://s3.amazonaws.com/videos.pentesteracademy.com/videos/badges/low/arm-assembly.png)
-
-Borrar y modificar README
-
-# Utilizar los dos directorios
-
-- code  - ahi depositar sus programas los ***archivos extensión *.s****  (Source File) algunos autores en x86 de ponen .asm y en otras plataformas ARM compatibles la extension *.s
-- Todo programa lleva su comentario en la parte de arriba, objetivo y nombre del programador minimo, como templete
-- images  - de haber algo de pantallas ahi se presentaran, su busca documentarlas en MARKDOWN el código es:
-
-``` ![](images/---archivo.jpg---) recordar que no lleva espacios```
-
-<!---
-  Los nombres de las imagenes no deben cambiar de preferenci el nombre del programa como:  KIOSKO.cpp (su pantallas serian KISOCO.jpg, KIOSCO-1.jpg, KIOSCO-2.jpg ... )
-  Y asi procurar estar agrupados.
---->
+![image](https://github.com/tectijuana/24b2expot2arm32-ensambladores/assets/158227857/4c61579d-91ab-4b21-bd82-a89fb89cac11)
 
 
 
-- Programa en MarkDown es inicia con tres tildes * (`) sin espacio, seguido de el lenguaje de programacion, al final del codigo se poner otra vez los mismos tilder..
+**<p align=center>Tecnológico Nacional de México**</p>
+	
+**<p align=center>Instituto Tecnológico de Tijuana**</p>
 
-No se usan espacios en nombres de archivos, usar los nombres estilo camelCase (primera palabra minusculas, mayuscula solo la 1ra letra de cada palabra subsecuente):  ejemplo: sensorHumo, etc.
+***<p align=center> Materia: </p>**
 
-Suerte.
+<p align=center> Lenguajes de interfaz </p>
 
 
+**<p align=center> Docente: </p>**
+<p align=center> M.C. Rene Solis Reyes </p>
 
-------
+**<p align=center> Unidad: </p>**
+<p align=center> 1 </p>
 
-<pre>
+**<p align=center> Título del trabajo: </p>**
+<p align=center> Integración de código Assembly con C</p>
 
-	<p align=center>
+**<p align=center> Estudiantes: </p>**
+<p align=center> Aganza Molina Abraham Armando </p>
+<p align=center> Martinez Castellanos Santy Francisco </p>
+<p align=center> Reynoso Rosales Eduardo </p>
+<p align=center> Soto Sanchez Jair</p>
 
-Tecnológico Nacional de México
-Instituto Tecnológico de Tijuana
+**<p align=center> Semestre:</p>**
+<p align=center> Enero - Junio 2024</p>
+	
 
-Departamento de Sistemas y Computación
-Ingeniería en Sistemas Computacionales
 
-Semestre:
-Febrero - Junio 2022
+![image](https://github.com/tectijuana/24b2expot2arm32-ensambladores/assets/158227857/154419d6-3644-46f0-83c2-200c69066357)
 
-Materia:
-Lenguajes de interfaz
 
-Docente:
-M.C. Rene Solis Reyes 
-
-Unidad:
-1
-
-Título del trabajo:
-Ejercicios ......
-
-Estudiante:
-.......
-
-	</p>
-
-</pre>
 
 <pre>
 
