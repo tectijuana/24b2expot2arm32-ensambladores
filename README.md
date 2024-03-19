@@ -56,7 +56,7 @@ Unidad:
 1
 
 Título del trabajo:
-Ejercicios ......
+Integración de código Assembly con C
 
 Estudiante:
 .......
