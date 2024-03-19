@@ -59,7 +59,7 @@ Título del trabajo:
 Integración de código Assembly con C
 
 Estudiante:
-.......
+Aganza Molina Abraham Armando
 
 	</p>
 
