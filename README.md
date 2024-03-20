@@ -1,4 +1,4 @@
-![Captura de pantalla 2024-03-19 144618](https://gist.github.com/assets/158227857/fc05cce1-a70f-4c58-85fd-d48f67c21a16)
+![image](https://github.com/tectijuana/24b2expot2arm32-ensambladores/assets/105455890/582911db-c9c2-4f90-ae93-22e2ec76ea6f)
 
 
 **<p align=center>Tecnológico Nacional de México**</p>
@@ -32,7 +32,7 @@
 	
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-![image](https://gist.github.com/assets/158227857/143ac045-a206-4ac9-b78e-ebdbdfff209f)
+![image](https://github.com/tectijuana/24b2expot2arm32-ensambladores/assets/105455890/31fa7859-f664-48e6-9b8b-e79ff9b1d46f)
 **<p align=center>RAZONES PARA MEZCLAR C CON ASSEMBLY</P>**
 
 
@@ -61,8 +61,7 @@ ${\color{blue} Aprendizaje \space y  \space comprensión \space del \space funci
 
 <p align=justify>Sin embargo, es importante tener en cuenta que el uso excesivo de ensamblador puede complicar el código, hacerlo menos legible y más propenso a errores. Por lo tanto, se debe usar con precaución y solo en partes críticas donde realmente se justifique su uso. Además, el código en ensamblador es menos portable y puede ser difícil de mantener, por lo que se debe considerar cuidadosamente si los beneficios justifican los costos asociados.</p>
 
-![image](https://gist.github.com/assets/158227857/a33567fb-95dd-4555-a193-7e20c2ced82b)
-
+![image](https://github.com/tectijuana/24b2expot2arm32-ensambladores/assets/105455890/79e32226-8651-4cf3-b3e3-6cb7ad7c454c)
 
 
 **VENTAJAS**
