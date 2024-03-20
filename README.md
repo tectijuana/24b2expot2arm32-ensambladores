@@ -118,12 +118,25 @@ ${\color{blue} Paso \space 1}$
 <p align-justify>Escribir la función en ensamblador y guardarla en un archivo separado, digamos funcion_asm.s.</P>
 
 ```assembly
-.text
-.global suma_asm
+;.global factorial          @ Define factorial como global
+;.type factorial, %function @ Define el tipo de factorial como una función
 
-suma_asm:
-    ADD r0, r0, r1   ; Suma el primer y segundo número (r0 = r0 + r1)
-    BX lr            ; Retorna
+factorial:                  @ Inicio de la función factorial
+    CMP r0, #0              @ Compara el valor en r0 con cero
+    MOVEQ r0, #1            @ Si r0 es igual a cero (flag Z establecido), r0 se mueve a 1 (factorial de 0 es 1)
+    BEQ .end                @ Si r0 es igual a cero, salta a .end (final de la función)
+
+    MOV r1, r0              @ Mueve el valor de r0 a r1 (r1 se utilizará como un contador para el bucle)
+    MOV r2, #1              @ Mueve el valor 1 a r2 (r2 se utilizará para almacenar el resultado del factorial)
+
+.loop:                      @ Etiqueta: Inicio del bucle
+    MUL r2, r1              @ Multiplica r2 por r1 y almacena el resultado en r2 (cálculo parcial del factorial)
+    SUBS r1, r1, #1         @ Decrementa el valor de r1 en 1 (r1--), y actualiza los flags
+    BNE .loop               @ Si el flag Z no está establecido (r1 no es igual a cero), salta a .loop (sigue el bucle)
+
+.end:
+    MOV r0, r2              @ Mueve el valor en r2 (resultado del factorial) a r0 (registro de retorno)
+    BX lr                   @ Regresa de la función al origen
 
 ```
 
@@ -132,7 +145,7 @@ ${\color{blue} Paso \space 2}$
 <p align=justify>Compilar el archivo de ensamblador usando un ensamblador apropiado para ARM32, como as o arm-linux-gnueabi-as.</p>
 
 ```bash
-as -o funciones_asm.o funciones_asm.s
+as -o factorial.o factorial.s
 ```
 
 ${\color{blue} Paso \space 3}$
@@ -140,7 +153,7 @@ ${\color{blue} Paso \space 3}$
 <p align=justify>En el programa en C, incluir un prototipo de la función ensamblador usando extern.</p>
 
 ```c
-extern int suma_asm(int a, int b);
+extern int factorial(int n);
 ```
 
 ${\color{blue} Paso \space 4}$
@@ -150,10 +163,15 @@ ${\color{blue} Paso \space 4}$
 ```c
 #include <stdio.h>
 
-int main() {
-    int resultado = suma_asm(5, 7);
-    printf("El resultado de la suma es: %d\n", resultado);
-    return 0;
+int main(){
+        int n;
+
+        printf("Indica el número que quieras calcular su factorial: ");
+        scanf("%d", &n);
+
+        int result = factorial(n);
+        printf("El factorial de %d es %d\n", n, result);
+        return 0;
 }
 ```
 
@@ -162,7 +180,7 @@ ${\color{blue} Paso \space 5}$
 <p align=justify>Compilar el programa C junto con el archivo de objeto generado por el ensamblador, utilizando un compilador apropiado para ARM32. </p>
 
 ```bash
-arm-linux-gnueabi-gcc -o programa main.c funciones_asm.o
+gcc -o programaFactorial factorial.o  factorial_c.o
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
