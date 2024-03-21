@@ -1,5 +1,5 @@
 @  
-@  Title: Practica 0 Templete para programa ARM Assembly   
+@  Title: Programa ensamblador para calcular una factorial
 @  Filename: factorial.s
 @  Autor:Reynoso Rosales Eduardo Guadalupe
 @  Date: 21/03/2024
