@@ -187,9 +187,6 @@ gcc -o programaFactorial factorial.o  factorial_c.o
 **<p align=center>PROGRAMA EJEMPLO</p>**
 **<p align=center>PROGRAMA EN C QUE UTILIZA UNA FUNCION DE ASSEMBLY PARA CALCULAR EL FACTORIAL DE UN NUMERO</p>**
 
-**<p align=center>GEF</p>**
-
-![image](https://github.com/tectijuana/24b2expot2arm32-ensambladores/assets/105455890/5fcbcb68-cdc9-47c0-b106-653c82735c06)
+[![asciicast](https://asciinema.org/a/9Q3MXxZ0KR5eEemgxNbPwJxGW.svg)](https://asciinema.org/a/9Q3MXxZ0KR5eEemgxNbPwJxGW)
 
 
-[![asciicast](https://asciinema.org/a/WHlAFnEWPIvS7G7y972oLpZWo.svg)](https://asciinema.org/a/WHlAFnEWPIvS7G7y972oLpZWo)
